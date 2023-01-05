@@ -1,6 +1,7 @@
 package com.example.java.serviceimpl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,6 +27,13 @@ public class StudentServiceImpl implements StudentService{
 		// TODO Auto-generated method stub
 		List<Student> list=studentRepository.findAll();
 		return list;
+	}
+
+	@Override
+	public Optional<Student> findIdStudentDetails(int studentId) {
+		Optional<Student> student=studentRepository.findById(studentId);
+		
+		return student;
 	}
 
 }
