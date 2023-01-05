@@ -26,7 +26,7 @@ public class StudentController {
 	
 	@GetMapping("/test")
 	public String test() {
-		return "WELCOME TO SPRINGBOOT APPLICATION IT'S MY FIRST TIME WORKING ON JENKINS ";
+		return "WELCOME TO SPRINGBOOT APPLICATION IT'S MY FIRST TIME WORKING ON JENKINS1 ";
 		
 	}
 
